@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwaazCart | AI Voice Receptionist</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar glass-panel">
+            <div class="brand">
+                <img src="AI-Voice-Agent.jpg" alt="AwaazCart Logo" class="brand-logo">
+                <h2>Awaaz<span>Cart</span></h2>
+            </div>
+            
+            <nav class="side-nav">
+                <a href="#" class="nav-item active"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+                <a href="#" class="nav-item"><i data-lucide="settings-2"></i> Configuration</a>
+                <a href="#" class="nav-item"><i data-lucide="phone-call"></i> Call Logs</a>
+                <a href="#" class="nav-item"><i data-lucide="blocks"></i> Integrations</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="agent-status pulse-active">
+                    <div class="status-dot"></div>
+                    <p>Agent Online</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="welcome-text">
+                    <h1>Welcome back, <span class="gradient-text">Admin</span></h1>
+                    <p>Your AI Receptionist is handling calls smoothly.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-secondary"><i data-lucide="bell"></i></button>
+                    <div class="profile-pic"><i data-lucide="user"></i></div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Stats Overview -->
+                <div class="stats-card glass-panel fade-in" style="animation-delay: 0.1s;">
+                    <div class="stat-icon"><i data-lucide="phone-incoming"></i></div>
+                    <div class="stat-info">
+                        <h3>1,248</h3>
+                        <p>Total Calls (Today)</p>
+                    </div>
+                    <div class="stat-trend positive">+14%</div>
+                </div>
+
+                <div class="stats-card glass-panel fade-in" style="animation-delay: 0.2s;">
+                    <div class="stat-icon"><i data-lucide="clock"></i></div>
+                    <div class="stat-info">
+                        <h3>1m 42s</h3>
+                        <p>Avg. Handle Time</p>
+                    </div>
+                    <div class="stat-trend positive">-5s</div>
+                </div>
+
+                <div class="stats-card glass-panel fade-in" style="animation-delay: 0.3s;">
+                    <div class="stat-icon"><i data-lucide="user-check"></i></div>
+                    <div class="stat-info">
+                        <h3>94%</h3>
+                        <p>Resolution Rate</p>
+                    </div>
+                    <div class="stat-trend positive">+2%</div>
+                </div>
+
+                <div class="stats-card glass-panel fade-in" style="animation-delay: 0.4s;">
+                    <div class="stat-icon"><i data-lucide="bot"></i></div>
+                    <div class="stat-info">
+                        <h3>42</h3>
+                        <p>Human Handoffs</p>
+                    </div>
+                    <div class="stat-trend negative">+5</div>
+                </div>
+
+                <!-- Call Simulator / Playground -->
+                <div class="simulator-card glass-panel fade-in col-span-2" style="animation-delay: 0.5s;">
+                    <div class="card-header">
+                        <h3><i data-lucide="play-circle"></i> Test Agent Sandbox</h3>
+                        <div class="badge">Live Demo</div>
+                    </div>
+                    <div class="simulator-body">
+                        <div class="call-visualizer">
+                            <div class="waveform">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="call-actions">
+                            <button id="startCallBtn" class="btn btn-primary glow"><i data-lucide="phone"></i> Start Test Call</button>
+                            <button id="endCallBtn" class="btn btn-danger hidden"><i data-lucide="phone-off"></i> End Call</button>
+                        </div>
+                        <div class="transcript-box" id="transcriptBox">
+                            <p class="sys-msg">Click "Start Test Call" to simulate an interaction...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agent Configuration Form -->
+                <div class="config-card glass-panel fade-in col-span-2" style="animation-delay: 0.6s;">
+                    <div class="card-header">
+                        <h3><i data-lucide="sliders"></i> Agent Configuration</h3>
+                        <button class="btn btn-secondary btn-sm" id="saveConfigBtn">Save Changes</button>
+                    </div>
+                    <div class="config-body">
+                        <div class="form-group">
+                            <label>Agent Name</label>
+                            <input type="text" value="AwaazBot" class="glass-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Telephony Provider</label>
+                            <select class="glass-input">
+                                <option>Exotel</option>
+                                <option>Twilio</option>
+                                <option>Plivo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Primary Language</label>
+                            <select class="glass-input">
+                                <option>English (US)</option>
+                                <option>Hindi (IN)</option>
+                                <option>Hinglish (IN)</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>System Prompt (Instructions)</label>
+                            <textarea class="glass-input" rows="4">You are a helpful, conversational AI receptionist for AwaazCart. Your job is to answer customer questions about product orders, store policies, and available items. Always be polite, professional, and quick. Do not use complex jargon. If you cannot help, route the call to a human.</textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Background Orbs for aesthetic effect -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    
+    <script src="app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
