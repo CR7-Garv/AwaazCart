@@ -112,16 +112,13 @@ body {
     margin-bottom: 40px;
 }
 
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, rgba(0,240,255,0.2), rgba(138,43,226,0.2));
-    border: 1px solid rgba(255,255,255,0.15);
-    color: var(--accent-cyan);
+.brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.15);
+    box-shadow: 0 0 15px rgba(0,240,255,0.2);
 }
 
 .brand h2 {

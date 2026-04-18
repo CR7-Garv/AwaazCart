@@ -110,7 +110,7 @@ body {
 }
 
 .brand { display: flex; align-items: center; gap: 10px; }
-.brand-icon { color: var(--brand-cyan); }
+.brand-logo { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid var(--brand-cyan); }
 .brand h2 { font-weight: 700; }
 .brand span { font-weight: 300; color: var(--text-muted); }
 
