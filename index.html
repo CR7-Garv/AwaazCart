@@ -35,12 +35,21 @@
             <div class="badge">Live AI Voice Agents</div>
             <h1>Dial our <span class="gradient-text text-glow">Virtual Receptionists</span></h1>
             <p>Experience how AwaazCart handles inbound calls for different industries seamlessly. <br>Choose an agent below and place a simulated web-call!</p>
+            
+            <div class="agent-selector-container">
+                <select id="agentSelect" class="agent-selector">
+                    <option value="salon">Salon Agent</option>
+                    <option value="clinic">Clinic Assistant</option>
+                    <option value="steel">B2B Steel Order</option>
+                    <option value="mystery">Escape Room Booking</option>
+                </select>
+            </div>
         </div>
 
         <div class="dialer-showcase">
             
             <!-- Hair Salon Phone Mockup -->
-            <div class="phone-mockup salon-theme">
+            <div class="phone-mockup salon-theme" id="mockup-salon">
                 <div class="phone-notch"></div>
                 <div class="phone-screen">
                     <div class="call-header">
@@ -63,7 +72,7 @@
             </div>
 
             <!-- Doctor Clinic Phone Mockup -->
-            <div class="phone-mockup clinic-theme">
+            <div class="phone-mockup clinic-theme hidden-mockup" id="mockup-clinic">
                 <div class="phone-notch"></div>
                 <div class="phone-screen">
                     <div class="call-header">
@@ -86,7 +95,7 @@
             </div>
 
             <!-- Iron & Steel Shop Phone Mockup -->
-            <div class="phone-mockup steel-theme">
+            <div class="phone-mockup steel-theme hidden-mockup" id="mockup-steel">
                 <div class="phone-notch"></div>
                 <div class="phone-screen">
                     <div class="call-header">
@@ -109,7 +118,7 @@
             </div>
 
             <!-- Mystery Escape Room Phone Mockup -->
-            <div class="phone-mockup mystery-theme">
+            <div class="phone-mockup mystery-theme hidden-mockup" id="mockup-mystery">
                 <div class="phone-notch"></div>
                 <div class="phone-screen">
                     <div class="call-header">

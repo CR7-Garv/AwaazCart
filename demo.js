@@ -282,4 +282,27 @@ document.addEventListener('DOMContentLoaded', () => {
         { role: 'user', text: "" }
     ]);
 
+    // Dropdown selection logic
+    const agentSelect = document.getElementById('agentSelect');
+    const mockups = {
+        'salon': document.getElementById('mockup-salon'),
+        'clinic': document.getElementById('mockup-clinic'),
+        'steel': document.getElementById('mockup-steel'),
+        'mystery': document.getElementById('mockup-mystery')
+    };
+
+    agentSelect.addEventListener('change', (e) => {
+        const selected = e.target.value;
+        
+        // Hide all mockups
+        Object.values(mockups).forEach(mockup => {
+            if (mockup) mockup.classList.add('hidden-mockup');
+        });
+        
+        // Show the selected mockup
+        if (mockups[selected]) {
+            mockups[selected].classList.remove('hidden-mockup');
+        }
+    });
+
 });
