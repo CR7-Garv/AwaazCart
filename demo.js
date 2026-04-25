@@ -48,6 +48,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 { role: 'agent', text: "A thrilling choice. Your doom is sealed. I mean, your booking is confirmed! See you at midnight." },
                 { role: 'user', text: "" }
             ]
+        },
+        playzone: {
+            theme: 'playzone-theme',
+            icon: 'gamepad-2',
+            title: 'AwaazCart Playzone',
+            subtitle: 'Gaming & Entertainment Agent',
+            type: 'simulation',
+            flow: [
+                { role: 'agent', text: "Hey! Welcome to AwaazCart Playzone! Ready to level up your fun? What activity are you interested in today?" },
+                { role: 'user', text: "" },
+                { role: 'agent', text: "Awesome choice! We have slots available for bowling, laser tag, and arcade gaming. How many players will be joining?" },
+                { role: 'user', text: "" },
+                { role: 'agent', text: "Perfect! What time works best for you? We have slots at 3 PM, 5 PM, and 7 PM." },
+                { role: 'user', text: "" },
+                { role: 'agent', text: "You're all set! Your Playzone session is booked. Get ready for an epic time. See you there!" }
+            ]
         }
     };
 
