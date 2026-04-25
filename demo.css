@@ -24,53 +24,43 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: #07081a;
     color: var(--text-main);
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
-    /* Multicoloured Animated Background */
-    background: linear-gradient(-45deg, #FF007F, #B200FF, #00F0FF, #00E676, #FF6600);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
 }
 
-/* --- MULTICOLOURED BACKGROUND EFFECTS --- */
+/* --- PROFESSIONAL STATIC DARK BACKGROUND --- */
 .galaxy-bg {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: -1;
     overflow: hidden;
-    background: linear-gradient(-45deg, rgba(255,0,127,0.5), rgba(178,0,255,0.5), rgba(0,240,255,0.5), rgba(0,230,118,0.5), rgba(255,102,0,0.5));
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    background: radial-gradient(ellipse at 20% 20%, rgba(90, 0, 180, 0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 80%, rgba(0, 60, 180, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 50% 50%, rgba(0, 10, 40, 1) 0%, #07081a 100%);
 }
 
 .glow-orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(140px);
-    opacity: 0.6;
-    animation: float 25s infinite alternate ease-in-out;
+    filter: blur(160px);
+    opacity: 0.22;
+    animation: float 40s infinite alternate ease-in-out;
 }
 
 .orb-primary {
-    width: 600px; height: 600px;
-    background: var(--brand-purple);
-    top: -100px; left: -100px;
+    width: 700px; height: 700px;
+    background: #7000cc;
+    top: -200px; left: -150px;
 }
 
 .orb-secondary {
-    width: 500px; height: 500px;
-    background: #0051ff; /* Deep Nebula Blue */
-    bottom: -150px; right: -150px;
-    animation-delay: -7s;
+    width: 600px; height: 600px;
+    background: #0040cc;
+    bottom: -200px; right: -150px;
+    animation-delay: -15s;
 }
 
 /* CSS Stars */
