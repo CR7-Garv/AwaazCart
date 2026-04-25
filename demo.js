@@ -23,16 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             icon: 'stethoscope',
             title: 'AwaazCart Clinic',
             subtitle: 'Medical AI Assistant',
-            type: 'simulation',
-            flow: [
-                { role: 'agent', text: "Namaste, AwaazCart Clinic. Are you an existing patient or is this your first visit?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "We can help with that. Doctor Sharma is available on Friday morning. Does 10:30 AM suit you?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "To confirm, could I please have your full name?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "Thank you. Your appointment with Doctor Sharma is confirmed. Have a great day!" }
-            ]
+            type: 'vapi',
+            vapiId: '054e74b6-e4eb-462d-bc77-c4928b073606'
         },
         steel: {
             theme: 'steel-theme',
