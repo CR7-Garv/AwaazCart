@@ -54,16 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
             icon: 'joystick',
             title: 'AwaazCart Playzone',
             subtitle: 'Gaming & Entertainment Agent',
-            type: 'simulation',
-            flow: [
-                { role: 'agent', text: "Hey! Welcome to AwaazCart Playzone! Ready to level up your fun? What activity are you interested in today?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "Awesome choice! We have slots available for bowling, laser tag, and arcade gaming. How many players will be joining?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "Perfect! What time works best for you? We have slots at 3 PM, 5 PM, and 7 PM." },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "You are all set! Your Playzone session is booked. Get ready for an epic time. See you there!" }
-            ]
+            type: 'vapi',
+            vapiId: '694fd8e7-063e-4493-ab61-ce4aac8470f9'
         }
     };
 
