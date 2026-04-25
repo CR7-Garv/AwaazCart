@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         playzone: {
             theme: 'playzone-theme',
-            icon: 'gamepad-2',
+            icon: 'joystick',
             title: 'AwaazCart Playzone',
             subtitle: 'Gaming & Entertainment Agent',
             type: 'simulation',
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { role: 'user', text: "" },
                 { role: 'agent', text: "Perfect! What time works best for you? We have slots at 3 PM, 5 PM, and 7 PM." },
                 { role: 'user', text: "" },
-                { role: 'agent', text: "You're all set! Your Playzone session is booked. Get ready for an epic time. See you there!" }
+                { role: 'agent', text: "You are all set! Your Playzone session is booked. Get ready for an epic time. See you there!" }
             ]
         }
     };
