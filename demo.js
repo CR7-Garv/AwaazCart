@@ -31,15 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             icon: 'factory',
             title: 'AwaazCart Steel',
             subtitle: 'B2B Order Agent',
-            type: 'simulation',
-            flow: [
-                { role: 'agent', text: "Welcome to AwaazCart Steel Traders. Are you calling to place a bulk order?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "Let me check our inventory. Yes, we currently have stock. Would you like to place an order now?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "Order confirmed. Generating your invoice now. It will be sent to your registered WhatsApp so you can process the payment." },
-                { role: 'user', text: "" }
-            ]
+            type: 'vapi',
+            vapiId: '963505b1-a8d8-4496-8dbf-e019425981ad'
         },
         mystery: {
             theme: 'mystery-theme',
