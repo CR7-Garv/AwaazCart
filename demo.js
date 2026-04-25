@@ -39,15 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             icon: 'ghost',
             title: 'AwaazCart Mystery',
             subtitle: 'Escape Room Booking Agent',
-            type: 'simulation',
-            flow: [
-                { role: 'agent', text: "Hello! You have reached shadows. Are you brave enough to book a session?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "Excellent. We have the Haunted Asylum and the Murder Mystery available tonight. Which will be your fate?" },
-                { role: 'user', text: "" },
-                { role: 'agent', text: "A thrilling choice. Your doom is sealed. I mean, your booking is confirmed! See you at midnight." },
-                { role: 'user', text: "" }
-            ]
+            type: 'vapi',
+            vapiId: '9138fbb2-71e2-45a8-a876-bc57405d4650'
         },
         playzone: {
             theme: 'playzone-theme',
