@@ -49,6 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
             subtitle: 'Gaming & Entertainment Agent',
             type: 'vapi',
             vapiId: '694fd8e7-063e-4493-ab61-ce4aac8470f9'
+        },
+        arcade: {
+            theme: 'arcade-theme',
+            icon: 'zap',
+            title: 'AwaazCart Arcade',
+            subtitle: 'Arcade & Gaming Booking Agent',
+            type: 'simulation',
+            flow: [
+                { role: 'agent', text: "Welcome to AwaazCart Arcade! I am here to help you book your ultimate gaming session. What game or zone are you interested in?" },
+                { role: 'user', text: "" },
+                { role: 'agent', text: "Excellent taste! How many people will be playing?" },
+                { role: 'user', text: "" },
+                { role: 'agent', text: "Got it! We have slots available at 2 PM, 4 PM, and 6 PM today. Which time suits you?" },
+                { role: 'user', text: "" },
+                { role: 'agent', text: "Your arcade session is confirmed! Tokens and gear will be ready for you. Game on and see you there!" }
+            ]
         }
     };
 

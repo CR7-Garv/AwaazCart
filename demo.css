@@ -9,6 +9,7 @@
     --brand-orange: #FF6600; /* For Steel theme */
     --brand-mystery: #00FF66; /* For Mystery theme */
     --brand-playzone: #FFD700; /* For Playzone theme - vibrant yellow */
+    --brand-arcade: #00BFFF;  /* For Arcade theme - electric blue */
     
     --success: #00E676;
     --danger: #FF3D00;
@@ -256,6 +257,7 @@ body {
 .steel-theme .phone-screen { background: linear-gradient(180deg, rgba(255,102,0,0.15) 0%, #0D0E15 40%); }
 .mystery-theme .phone-screen { background: linear-gradient(180deg, rgba(0,255,102,0.15) 0%, #0D0E15 40%); }
 .playzone-theme .phone-screen { background: linear-gradient(180deg, rgba(255,215,0,0.15) 0%, #0D0E15 40%); }
+.arcade-theme .phone-screen { background: linear-gradient(180deg, rgba(0,191,255,0.15) 0%, #0D0E15 40%); }
 
 .call-header { text-align: center; padding: 50px 20px 20px; }
 
@@ -277,6 +279,7 @@ body {
 .steel-theme .avatar { color: var(--brand-orange); }
 .mystery-theme .avatar { color: var(--brand-mystery); }
 .playzone-theme .avatar { color: var(--brand-playzone); }
+.arcade-theme .avatar { color: var(--brand-arcade); }
 
 .call-header h3 { font-size: 22px; margin-bottom: 4px; }
 .call-header p { color: var(--text-muted); font-size: 13px; }
@@ -323,6 +326,7 @@ body {
 .steel-theme .msg.agent { border: 1px solid rgba(255,102,0,0.3); box-shadow: inset 2px 0 0 var(--brand-orange); }
 .mystery-theme .msg.agent { border: 1px solid rgba(0,255,102,0.3); box-shadow: inset 2px 0 0 var(--brand-mystery); }
 .playzone-theme .msg.agent { border: 1px solid rgba(255,215,0,0.3); box-shadow: inset 2px 0 0 var(--brand-playzone); }
+.arcade-theme .msg.agent { border: 1px solid rgba(0,191,255,0.3); box-shadow: inset 2px 0 0 var(--brand-arcade); }
 
 .msg.user {
     align-self: flex-end;
@@ -374,6 +378,7 @@ body {
 .steel-theme .waveform span { background: var(--brand-orange); }
 .mystery-theme .waveform span { background: var(--brand-mystery); }
 .playzone-theme .waveform span { background: var(--brand-playzone); }
+.arcade-theme .waveform span { background: var(--brand-arcade); }
 
 .waveform.active span { animation: wave 0.8s infinite alternate ease-in-out; }
 .waveform.active span:nth-child(1) { animation-delay: 0.1s; }
