@@ -117,8 +117,8 @@ body {
     height: 44px;
     border-radius: 12px;
     object-fit: cover;
-    border: 2px solid rgba(255,255,255,0.15);
-    box-shadow: 0 0 15px rgba(0,240,255,0.2);
+    border: 2px solid rgba(108,99,255,0.4);
+    box-shadow: 0 0 15px rgba(108,99,255,0.3);
 }
 
 .brand h2 {
@@ -151,13 +151,15 @@ body {
 }
 
 .nav-item:hover, .nav-item.active {
-    background: rgba(255,255,255,0.05);
+    background: rgba(108, 99, 255, 0.1);
     color: var(--text-primary);
 }
 
 .nav-item.active {
-    box-shadow: inset 3px 0 0 var(--accent-cyan);
-    background: linear-gradient(90deg, rgba(0,240,255,0.1) 0%, rgba(0,0,0,0) 100%);
+    box-shadow: inset 3px 0 0 #6C63FF;
+    background: linear-gradient(90deg, rgba(108,99,255,0.15) 0%, rgba(0,0,0,0) 100%);
+    color: #A89FFF;
+    font-weight: 600;
 }
 
 .sidebar-footer {
